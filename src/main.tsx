@@ -3,11 +3,11 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router'
 import App from './App.tsx'
-import Fleet from './component/pages/ourFleet.tsx'
 import TourPackages from './component/pages/tourPackages.tsx'
 import Booking from './component/pages/booking.tsx'
 import ErrorPages from './component/pages/errorPages.tsx'
 import Contact from './component/pages/contact.tsx'
+import OurFleet from './component/pages/ourFleet.tsx'
 
 const router = createBrowserRouter([
   {
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/ourFleet',
-    element: <Fleet />,
+    element: <OurFleet />,
   },
   {
     path: '/packages',
