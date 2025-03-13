@@ -1,6 +1,5 @@
 import Navbar from "./component/layout/NavBar"
 import TextPressure from "./component/ui/TextPressure"
-import bg1 from "./assets/video/bg-1.mp4"
 import shipSound from "./assets/sound/shipSound.mp3"
 import Feature from "./component/layout/Feature"
 import CircularGallery from "./component/ui/CircularGallery"
@@ -95,7 +94,7 @@ function App() {
     
     <div className="fade-out">
       <div className="main-content h-screen w-full relative">
-        <video src={bg1} muted loop autoPlay playsInline className="absolute object-cover h-screen w-full" style={{zIndex: "-1"}}></video>
+        <video src='https://media-hosting.imagekit.io//06fc1e7e75bc4699/bg-1.mp4?Expires=1836485001&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=rr0p8uYFHhDoNZJPIA5fXmf1E76LLVyTigg~0GjUvdm5Q7kIQPURnYEL8lFQaiDlfxYHp-YinBDQB4-Hg9BGY8K2o6sxb-Grc-7mUHCpE6UKv8iYHuC0vQ8MyX~b4RRJLJkG9yWrjDsZoYzAZBa0UmMpVKoZR1jryNVov4RMIftfsVSFSGfuQNlIgWCHuo~L2R8IV3SOCFdSeBxl5deQhCryeIeRaDfHkWsgBTl78wEzkAqQjl6fYOCjqrlsD~wSJM5sTD01otq1YZCtGE2RCjRcvllN0n8UTngco17CjinKPP9~MEod7zuglYbMyIyNxm66oPmRdrK1Qt~fkBvNpA__' muted loop autoPlay playsInline className="absolute object-cover h-screen w-full" style={{zIndex: "-1"}}></video>
 
         <section className="container mx-auto w-full h-screen p-5 md:px-20 flex justify-center items-center leading-8">
         <audio src={shipSound} autoPlay />
