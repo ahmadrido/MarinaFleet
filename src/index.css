@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+.main-content {
+  background: url('https://videos.pexels.com/video-files/854976/854976-uhd_2560_1440_30fps.mp4');
+  background-size: cover;
+}
+
+* {
+  scroll-behavior: smooth !important;
+  user-select: none;
+}
+
+@theme {
+  --animate-shine: shine 5s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 0;
+    filter: blur(3px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+.fade-out {
+  animation-name: fade-out;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+.floating-nav {
+  animation-name: fade-out;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
